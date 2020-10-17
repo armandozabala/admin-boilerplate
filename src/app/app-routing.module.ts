@@ -8,7 +8,11 @@ import { NotpagefoundComponent } from './notpagefound/notpagefound.component';
 
 
 const routes: Routes = [
-  { path: '**', component: NotpagefoundComponent},
+  // path: '/dashboard', PagesRouting
+  // path: '/auth', AuthRouting
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+  { path: '**', component: NotpagefoundComponent}
+
 ];
 
 @NgModule({
