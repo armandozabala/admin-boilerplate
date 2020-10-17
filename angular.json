@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-dog"
+    }
+  },
+  "defaultProject": "angular-dog",
+  "cli": {
+    "analytics": "4ea4be98-18cd-414d-958a-0ce21c39ffec"
+  }
 }
