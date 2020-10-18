@@ -1,3 +1,4 @@
+import { CustomersService } from './../../service/customers.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private customerService: CustomersService) { }
 
   ngOnInit(): void {
+
+      this.customerService.getUsers().subscribe(res => {
+
+          console.log(res);
+
+      });
+
   }
 
 }
